@@ -10,7 +10,7 @@ const nextPath = params.get('next') || '/index.html';
 const ACCESS_KEY = 'courseAccess';
 const ENDPOINT = '/.netlify/functions/validate-code';
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailRegex = /^[a-z]{4}\d{4}@mylaurier\.ca$/i;
 const SPINNER_ACTIVE_CLASS = 'is-loading';
 
 function toggleLoading(isLoading) {
@@ -80,13 +80,13 @@ form.addEventListener('submit', async (event) => {
   const courseCode = codeInput.value.trim();
 
   if (!emailRegex.test(email)) {
-    setStatus('Please enter a valid university email address.', true);
+    setStatus('Use your Laurier email in the form abcd1234@mylaurier.ca.', true);
     emailInput.focus();
     return;
   }
 
   if (!courseCode) {
-    setStatus('The private course code is required.', true);
+    setStatus('Your course code is required.', true);
     codeInput.focus();
     return;
   }
@@ -103,7 +103,7 @@ form.addEventListener('submit', async (event) => {
     window.location.replace(destination);
   } catch (error) {
     console.error(error);
-    setStatus('Access denied. Please double-check your details or contact your instructor.', true);
+    setStatus('Access denied. Please double-check your details or contact your professor.', true);
   } finally {
     toggleLoading(false);
   }

@@ -1,0 +1,21 @@
+[build]
+  command = "bash scripts/netlify-build.sh"
+  publish = "_output"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[dev]
+  command = "quarto preview --no-browser --port 4321 --host 127.0.0.1"
+  targetPort = 4321
+
+[[headers]]
+  for = "/login/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[redirects]]
+  from = "/login"
+  to = "/login/"
+  status = 301

@@ -1,0 +1,13 @@
+{
+  "name": "quarto-course-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Netlify-ready Quarto course site with login gating.",
+  "license": "MIT",
+  "scripts": {
+    "build": "quarto render"
+  },
+  "dependencies": {
+    "mongodb": "^6.9.0"
+  }
+}

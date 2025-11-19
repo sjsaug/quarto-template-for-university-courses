@@ -2,6 +2,8 @@ project:
   type: "website"
   title: "MY_COURSE_NAME 2022/23"
   output-dir: _output
+  resources:
+    - login
   render:
     - "index.qmd"
     - "2023/*.qmd"
@@ -80,6 +82,8 @@ format:
       - css/custom_style.css
       - css/syllabus.css
     toc: true
+    include-before-body:
+      - helpers/access-guard.html
 
 #margin-header: |
 # ![](/figures/logos/MY_INSTITUTION.png)

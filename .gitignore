@@ -235,3 +235,7 @@ cython_debug/
 
 
 .vscode/
+**/*.quarto_ipynb
+
+# Local Netlify folder
+.netlify

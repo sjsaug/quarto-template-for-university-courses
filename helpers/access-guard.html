@@ -1,0 +1,43 @@
+<script>
+(function () {
+  const LOGIN_PATH = '/login/';
+  const ACCESS_KEY = 'courseAccess';
+  const SESSION_LIFETIME_MS = 12 * 60 * 60 * 1000; // 12 hours
+
+  const path = window.location.pathname;
+  const isLoginPage = path === '/login' || path === '/login/' || path.startsWith('/login/');
+
+  if (isLoginPage) {
+    return;
+  }
+
+  let shouldRedirect = false;
+  try {
+    const raw = sessionStorage.getItem(ACCESS_KEY);
+    if (!raw) {
+      shouldRedirect = true;
+    } else {
+      const parsed = JSON.parse(raw);
+      const isExpired = !parsed.grantedAt || Date.now() - parsed.grantedAt > SESSION_LIFETIME_MS;
+      if (isExpired) {
+        sessionStorage.removeItem(ACCESS_KEY);
+        shouldRedirect = true;
+      }
+    }
+  } catch (error) {
+    console.warn('Unable to read course access token', error);
+    shouldRedirect = true;
+  }
+
+  if (shouldRedirect) {
+    const current = encodeURIComponent(path + window.location.search + window.location.hash);
+    const target = `${LOGIN_PATH}?next=${current}`;
+    window.location.replace(target);
+  }
+})();
+</script>
+<noscript>
+  <div style="padding:1rem;background:#fee2e2;border-left:4px solid #b91c1c;">
+    JavaScript is required to access the course portal. Please enable it and reload this page.
+  </div>
+</noscript>

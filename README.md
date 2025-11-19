@@ -162,6 +162,48 @@ Now, whenever you open a Jupyter Notebook, you should see the `venv-my-course` k
 
 </details>
 
+<details><summary>🔐 Netlify hosting with login gate</summary>
+
+## 🔐 Netlify hosting with login gate
+
+This template now includes a credential gate that appears before any course page loads when published to Netlify. The gate relies on a Netlify Function plus a MongoDB collection containing your private course codes.
+
+1. **Provision MongoDB** – Create a database (for example `coursePortal`) and a collection (for example `courseCodes`). Insert one document per active code:
+
+        ```json
+        {
+            "code": "2025-DS101",
+            "redirectTo": "/2023/index.html",
+            "active": true
+        }
+        ```
+
+        The `redirectTo` value lets you send different cohorts to different landing pages when needed.
+2. **Configure environment variables** – In Netlify’s Site settings → Build & deploy → Environment add:
+
+        | Key | Description |
+        | --- | --- |
+        | `MONGODB_URI` | Full MongoDB connection string (with credentials) |
+        | `MONGODB_DB` | Database name (e.g., `coursePortal`) |
+        | `MONGODB_COLLECTION` *(optional)* | Collection name (defaults to `courseCodes`) |
+        | `COURSE_CODE_FIELD` *(optional)* | Field that stores the code (defaults to `code`) |
+        | `COURSE_REDIRECT_FIELD` *(optional)* | Field that stores the redirect path (defaults to `redirectTo`) |
+
+3. **Install dependencies** – Run `npm install` locally so that Netlify picks up the `package-lock.json`, or rely on Netlify’s automatic install step. This pulls `mongodb` and the Quarto CLI used during builds.
+4. **Deploy** – Create a Netlify site pointing to this repository. The included `netlify.toml` instructs Netlify to run `npm run build` (which executes `npx quarto render`), publish `_output`, and expose the login assets plus serverless function automatically.
+
+### Local testing
+
+1. `npm install`
+2. Run `npx netlify dev` to exercise the function and login flow locally. The Quarto files will still render via `quarto preview`; alternatively, run `npm run build` when you just need the static output.
+
+### Customising the login experience
+
+- Edit the copy/styling inside `login/index.html` and `login/styles.css`.
+- The request/redirect logic lives in `login/main.js`. Successful validations set a short-lived session key; all Quarto pages automatically check for this key before rendering, thanks to `helpers/access-guard.html`.
+
+</details>
+
 <details><summary>🕸️ Publishing the website</summary>
 
 ## 🕸️ Publishing the website

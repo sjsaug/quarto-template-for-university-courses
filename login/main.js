@@ -49,12 +49,57 @@ function hydrateEmail() {
   }
 }
 
-function storeAccessSession(email) {
+function normalizePath(value) {
+  if (!value || typeof value !== 'string') {
+    return '/';
+  }
+
+  try {
+    const url = new URL(value, window.location.origin);
+    const pathname = url.pathname || '/';
+    return pathname.split('#')[0].split('?')[0] || '/';
+  } catch (error) {
+    const sanitized = value.startsWith('/') ? value : `/${value}`;
+    return sanitized.split('#')[0].split('?')[0] || '/';
+  }
+}
+
+function deriveAccessRoot(pathValue) {
+  const normalized = normalizePath(pathValue);
+  if (normalized === '/') {
+    return '/';
+  }
+
+  if (normalized.endsWith('/')) {
+    return normalized;
+  }
+
+  const lastSegment = normalized.substring(normalized.lastIndexOf('/') + 1);
+  const isFile = lastSegment.includes('.');
+
+  if (isFile) {
+    const lastSlash = normalized.lastIndexOf('/');
+    if (lastSlash <= 0) {
+      return '/';
+    }
+    return normalized.slice(0, lastSlash + 1);
+  }
+
+  return `${normalized}/`;
+}
+
+function storeAccessSession({ email, accessRoot }) {
   const payload = {
     email,
     grantedAt: Date.now(),
+    accessRoot: deriveAccessRoot(accessRoot),
   };
-  sessionStorage.setItem(ACCESS_KEY, JSON.stringify(payload));
+
+  try {
+    sessionStorage.setItem(ACCESS_KEY, JSON.stringify(payload));
+  } catch (error) {
+    console.debug('Unable to persist access session', error);
+  }
 }
 
 async function validateCredentials(email, courseCode) {
@@ -96,10 +141,11 @@ form.addEventListener('submit', async (event) => {
 
   try {
     const result = await validateCredentials(email, courseCode);
-    storeAccessSession(email);
+    const destination = (result && result.nextPath) || nextPath;
+    const accessRoot = (result && result.accessRoot) || deriveAccessRoot(destination);
+    storeAccessSession({ email, accessRoot });
     persistEmail(email);
     setStatus('Access granted. Redirecting…');
-    const destination = (result && result.nextPath) || nextPath;
     window.location.replace(destination);
   } catch (error) {
     console.error(error);

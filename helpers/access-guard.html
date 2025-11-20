@@ -4,7 +4,59 @@
   const ACCESS_KEY = 'courseAccess';
   const SESSION_LIFETIME_MS = 12 * 60 * 60 * 1000; // 12 hours
 
-  const path = window.location.pathname;
+  function normalizePath(value) {
+    if (!value || typeof value !== 'string') {
+      return '/';
+    }
+
+    const trimmed = value.trim();
+    if (!trimmed) {
+      return '/';
+    }
+
+    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
+      try {
+        const url = new URL(trimmed);
+        return (url.pathname || '/').split('#')[0].split('?')[0] || '/';
+      } catch (error) {
+        return '/';
+      }
+    }
+
+    const prefixed = trimmed.startsWith('/') ? trimmed : `/${trimmed}`;
+    return prefixed.split('#')[0].split('?')[0] || '/';
+  }
+
+  function ensureTrailingSlash(value) {
+    if (!value || value === '/') {
+      return '/';
+    }
+    return value.endsWith('/') ? value : `${value}/`;
+  }
+
+  function normalizeAccessRoot(root) {
+    if (!root) {
+      return '/';
+    }
+    return ensureTrailingSlash(normalizePath(root));
+  }
+
+  function isPathWithinScope(pathname, accessRoot) {
+    if (!accessRoot || accessRoot === '/') {
+      return true;
+    }
+
+    const normalizedPath = normalizePath(pathname);
+    const normalizedRoot = normalizeAccessRoot(accessRoot);
+
+    if (normalizedPath === normalizedRoot.slice(0, -1)) {
+      return true;
+    }
+
+    return normalizedPath.startsWith(normalizedRoot);
+  }
+
+  const path = normalizePath(window.location.pathname);
   const isLoginPage = path === '/login' || path === '/login/' || path.startsWith('/login/');
 
   if (isLoginPage) {
@@ -18,9 +70,13 @@
       shouldRedirect = true;
     } else {
       const parsed = JSON.parse(raw);
+      const accessRoot = normalizeAccessRoot(parsed.accessRoot);
       const isExpired = !parsed.grantedAt || Date.now() - parsed.grantedAt > SESSION_LIFETIME_MS;
+      const outOfScope = !isPathWithinScope(path, accessRoot);
       if (isExpired) {
         sessionStorage.removeItem(ACCESS_KEY);
+        shouldRedirect = true;
+      } else if (outOfScope) {
         shouldRedirect = true;
       }
     }

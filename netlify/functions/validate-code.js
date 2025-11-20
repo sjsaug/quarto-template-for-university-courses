@@ -17,6 +17,50 @@ if (!databaseName) {
 
 let cachedClient = null;
 
+function normalizePath(value) {
+  if (!value || typeof value !== 'string') {
+    return '/';
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return '/';
+  }
+
+  try {
+    const url = new URL(trimmed, 'https://placeholder.local');
+    const pathname = url.pathname || '/';
+    return pathname.split('#')[0].split('?')[0] || '/';
+  } catch (error) {
+    const sanitized = trimmed.startsWith('/') ? trimmed : `/${trimmed}`;
+    return sanitized.split('#')[0].split('?')[0] || '/';
+  }
+}
+
+function deriveAccessRoot(pathValue) {
+  const normalized = normalizePath(pathValue);
+  if (normalized === '/') {
+    return '/';
+  }
+
+  if (normalized.endsWith('/')) {
+    return normalized;
+  }
+
+  const lastSegment = normalized.substring(normalized.lastIndexOf('/') + 1);
+  const isFile = lastSegment.includes('.');
+
+  if (isFile) {
+    const lastSlash = normalized.lastIndexOf('/');
+    if (lastSlash <= 0) {
+      return '/';
+    }
+    return normalized.slice(0, lastSlash + 1);
+  }
+
+  return `${normalized}/`;
+}
+
 async function getClient() {
   if (cachedClient) {
     return cachedClient;
@@ -75,10 +119,12 @@ exports.handler = async function handler(event) {
     }
 
     const nextPath = courseDoc[redirectField] || '/index.html';
+    const accessRoot = deriveAccessRoot(nextPath);
 
     return jsonResponse(200, {
       message: 'Access granted.',
       nextPath,
+      accessRoot,
     });
   } catch (error) {
     console.error('validate-code error', error);

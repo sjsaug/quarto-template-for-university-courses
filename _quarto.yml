@@ -8,6 +8,8 @@ project:
     - "index.qmd"
     - "2023/*.qmd"
     - "2023/weeks/week01/*.qmd"
+    - "CP322/W26/*.qmd"
+    - "CP322/W26/weeks/week01/*.qmd"
 
 website:
   title: "MY_COURSE_NAME 2022/23"

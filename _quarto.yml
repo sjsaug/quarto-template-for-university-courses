@@ -67,8 +67,8 @@ csl: references/chicago-author-date.csl
 
 format:
   html:
-    author: Dr. [MY NAME](#)
-    author-meta: Dr. MY NAME
+    author: Dr. [Sukhjit Singh Sehra](#)
+    author-meta: Dr. Sukhjit Singh Sehra
     date-format: "DD MMMM YYYY"
 
     email-obfuscation: javascript

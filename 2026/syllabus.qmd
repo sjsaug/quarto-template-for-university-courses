@@ -35,7 +35,7 @@
 | Final Exam                  |    30%    |
 | Class Participation (Bonus) |    3%     |
 
-### Course Information
+## Course Information
 
 -   Mylearningspace and Gradescope will be used to release assignments and other course-related updates.
 -   Students will complete three to four assignments that synthesize all the concepts and skills learned. Assignments will be released on Thursdays according to the tentative course schedule and will be due the following Thursday at midnight of the due week.
@@ -45,40 +45,40 @@
 -   Any error in marking must be reported to the instructor within one week of the date the work was returned in class. No marks will be changed after that period.
 -   **Note:** For this course, “midnight” refers to **11:55 p.m.**, not 11:59 p.m.
 
-### Schedule
+## Schedule
 
 Note: this schedule is subject to change. All times are based upon Eastern Standard Time - i.e. Waterloo, ON time.
 
-| **Week** | **Starting** | **Lectures** | **Quizzes** | **Assignments** | **Other** |
-|------------|------------|------------|------------|------------|------------|
-| 1 | Jan 4, 2026 | Intro to ML; Model Accuracy; Regression |  |  |  |
-| 2 | Jan 11, 2026 | LDA; QDA; KNN; Logistic Regression |  | A#1 out |  |
-| 3 | Jan 18, 2026 | Resampling; Cross-Validation; Bootstrap; Model Selection |  |  |  |
-| 4 | Jan 25, 2026 | Regularization |  | A#1 due / A#2 out |  |
-| 5 | Feb 1, 2026 | Polynomial Regression; Splines; Non-linear Methods |  |  |  |
-| 6 | Feb 8, 2026 | Trees; Bagging; Random Forest; Boosting |  | A#2 due / A#3 out |  |
-| 7 | Feb 15, 2026 | Reading Week |  |  |  |
-| 8 | Feb 22, 2026 | Support Vector Machines |  |  | Midterm (Feb 25) |
-| 9 | Mar 1, 2026 | Neural Networks; Deep Learning |  | A#3 due / A#4 out |  |
-| 10 | Mar 8, 2026 | Deep Learning (continued) |  |  |  |
-| 11 | Mar 15, 2026 | Main Memory |  | A#4 due / Project out |  |
-| 12 | Mar 22, 2026 | Unsupervised Learning; Clustering; K-means; Model-based Clustering |  |  |  |
-| 13 | Mar 29, 2026 | File Systems Implementation |  | Project due |  |
-| 14 | Apr 5, 2026 | Reinforcement Learning; Projection Pursuit; Model Averaging; Review |  | A#7 |  |
+| **Week** | **Starting** | **Lectures** | **Assignments** | **Other** |
+|------------|------------|------------|------------|------------|
+| 1 | Jan 4, 2026 | Intro to ML; Model Accuracy; Regression |  |  |
+| 2 | Jan 11, 2026 | LDA; QDA; KNN; Logistic Regression | A#1 out |  |
+| 3 | Jan 18, 2026 | Resampling; Cross-Validation; Bootstrap; Model Selection |  |  |
+| 4 | Jan 25, 2026 | Regularization | A#1 due / A#2 out |  |
+| 5 | Feb 1, 2026 | Polynomial Regression; Splines; Non-linear Methods |  |  |
+| 6 | Feb 8, 2026 | Trees; Bagging; Random Forest; Boosting | A#2 due / A#3 out |  |
+| 7 | Feb 15, 2026 | Reading Week |  |  |
+| 8 | Feb 22, 2026 | Support Vector Machines |  | Midterm (Feb 25) |
+| 9 | Mar 1, 2026 | Neural Networks; Deep Learning | A#3 due / A#4 out |  |
+| 10 | Mar 8, 2026 | Deep Learning (continued) |  |  |
+| 11 | Mar 15, 2026 | Main Memory | A#4 due / Project out |  |
+| 12 | Mar 22, 2026 | Unsupervised Learning; Clustering; K-means; Model-based Clustering |  |  |
+| 13 | Mar 29, 2026 | File Systems Implementation | Project due |  |
+| 14 | Apr 5, 2026 | Reinforcement Learning; Projection Pursuit; Model Averaging; Review | A#7 |  |
 
-### Missed Assignments
+## Missed Assignments
 
 An assignment not handed in receives a mark of **Zero** unless there is a documented reason. If a documented reason is supplied, the weight of the missing assignment is shifted to the final exam. A copy/original of the documented reason must be given to and approved by the instructor.
 
-### Midterm Exam
+## Midterm Exam
 
 (Tentative) Wednesday, February 25, 2026. Time: 02:30 PM - 03:50 PM. . The Instructions would be posted on the Myls Page before the exam date.
 
-### Missed Midterm
+## Missed Midterm
 
 A missed midterm exam will receive a mark of **Zero** unless there is a valid documented reason. Weight shifting is only given to students with verifiable extenuating circumstances. An extenuating circumstance is a rare and severe event for which a student has no control or cannot anticipate (for example, a serious accident or emergent medical condition).
 
-### Getting Help
+## Getting Help
 
 -   MyLearningSpace: You should frequently visit your instructor's CP322 webpage on Myls. It contains information pertinent to the course.
 
@@ -86,7 +86,7 @@ A missed midterm exam will receive a mark of **Zero** unless there is a valid do
 
 -   If the issue/question is not appropriately addressed, you should consult your instructor without delay through email or during office hours are given on page 1. Please do not email me via Myls and, do not make any submissions through email as it gets automatically flagged as spam.
 
-### University and Course Policies
+## University and Course Policies
 
 -   **Academic Calendars**: Students are encouraged to review the [Academic Calendar](https://academic-calendar.wlu.ca/) for information regarding all important dates, deadlines, and services available on campus.
 

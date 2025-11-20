@@ -4,39 +4,33 @@ subtitle: "Academic Term: Winter 2026"
 format: html
 ---
 
-::: {.callout-note collapse=false}
+::: {.callout-note collapse=true}
 ## 📢 Course Description
+_3 lecture hoursCredit: 0.50 Prerequisite: CP312_
+
 With the rise of data science and big data fields, machine learning has gained further recognition as the key driver behind the successful advance of these fields. However, many recent entrants to the field can only utilize the variety of machine learning algorithms as black boxes. This course aims to empower students to effectively use and understand the primary approaches so as to be able to modify them for specific uses. Our focus is less on theory and more on practice. Students engage in hands-on implementation of some of the fundamental algorithms such as predictive modeling and clustering applied to real, open-ended problems.
 :::
 
-::: {.callout-important collapse=false}
-## 📢 Important
+# 📍 Lecture
 
-(12/03/2023)
-
-- [🗓️ Week 01 lecture material](/2026/weeks/week01/page.qmd) is now available!
-
-:::
+Section C: 	Mon/Wed from 02:30 PM - 03:50 PM at N1002
 
 
 # 🧑🏻‍🏫 Our Team
 
 ::: {.panel-tabset}
 ## Course Convenor
-
-
 ![](/figures/people/ssehra.jpg){fig-align="left" fig-alt="Photo of Dr. Sehra" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}  
 **[Sukhjit Singh Sehra](ssehra.com)** <br/>
 Assistant Professor<br/>
 [Wilfrid Laurier University](wlu.ca)</a><br/>
 📧 [Email](mailto:ssehra@wlu.ca)
 
+
 Office Hours: 
 
 - Office: Sciece Building, Room No: N2062
 - Office hour: Monday from 12:30 PM - 1:30 PM at N2062 (Via Teams Link available on Myls Course Page) OR you can request time by Appointment.
-
-
 
 ## Teaching Staff
 
@@ -49,13 +43,16 @@ PhD Candidate at PLACE <br>
 **[TA_NAME](#)** <br/>
 PhD Candidate at PLACE <br> 
 📧 [EMAIL](mailto:) -->
-
-
 :::
 
-# 📍 Lecture
+::: {.callout-important collapse=false}
+## 📢 Important
 
-Section C: 	Mon/Wed from 02:30 PM - 03:50 PM at N1002
+(12/03/2023)
+
+- [🗓️ Week 01 lecture material](/2026/weeks/week01/page.qmd) is now available!
+
+:::
 
 <!-- # 💻 Class Groups
 

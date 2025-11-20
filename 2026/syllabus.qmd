@@ -1,0 +1,129 @@
+## Course Overview and Approach
+
+-   Identify machine learning models and algorithms appropriate for solving specific problems.
+
+-   Explain the essential foundations behind core machine learning models and algorithms.
+
+-   Identify the main limitations and failure modes of core machine learning models and algorithms.
+
+-   Build moderately complex machine learning algorithms to solve machine learning problems.
+
+-   Evaluate and compare algorithms in supervised learning, unsupervised learning, and deep learning settings.
+
+## Course Tools and Learning Materials
+
+-   *An Introduction to Statistical Learning with Applications in Python* by Gareth James, Daniela Witten, and Trevor Hastie, Second Edition, Published by Springer ([online version](https://www.statlearning.com)).
+-   *Machine Learning* by Tom Mitchell, McGraw Hill, 1997.
+
+## Software requirements:
+
+-   The course assignments would be a mix of conceptual concepts and Python-based programming questions.
+
+-   Machine learning packages from Python (or its various versions) are used as a programming language for in-class demonstrations. Jupyter notebook environment would be used for coding for this course. Jupyter notebook environment can be assessed using the Laurier Login credential at https://wlu.syzygy.ca or Google Colab or your own machine.
+
+-   You are responsible for storing all your assignment work on your own memory sticks, Laurier network storage, the cloud, or other media. We strongly suggest that you keep at least two copies of your work at all times.
+
+## Student Evaluation
+
+-   To complete this course, students are required to participate in regular classes, and complete quizzes, assignments, complete midterm and final exams. If the student passes the final exam (\>50%), then the final score will be the sum of Grades in Assignments, Quizzes, Midterms, and Final exam as per the following distribution:
+
+| Assessment                  | Weighting |
+|:----------------------------|:---------:|
+| Assignments                 |    25%    |
+| Midterm                     |    20%    |
+| Course Project              |    25%    |
+| Final Exam                  |    30%    |
+| Class Participation (Bonus) |    3%     |
+
+### Course Information
+
+-   Mylearningspace and Gradescope will be used to release assignments and other course-related updates.
+-   Students will complete three to four assignments that synthesize all the concepts and skills learned. Assignments will be released on Thursdays according to the tentative course schedule and will be due the following Thursday at midnight of the due week.
+-   No late assignments are accepted. All assignments carry equal weight.
+-   The course project is a group project (groups of 2–3) designed to test your ability to apply course knowledge to real-world problems. Details will be posted on MyLS. Each group must submit a project document and record a project demonstration video to be uploaded to YouTube or another cloud platform. The link must be submitted along with other project requirements before the due date. Late projects will be penalized 10% per day, up to two days. Projects submitted after two days will not be accepted.
+-   All submitted work will be checked for plagiarism. Plagiarism and sharing your work with another student are considered academic misconduct.
+-   Any error in marking must be reported to the instructor within one week of the date the work was returned in class. No marks will be changed after that period.
+-   **Note:** For this course, “midnight” refers to **11:55 p.m.**, not 11:59 p.m.
+
+### Schedule
+
+Note: this schedule is subject to change. All times are based upon Eastern Standard Time - i.e. Waterloo, ON time.
+
+| **Week** | **Starting** | **Lectures** | **Quizzes** | **Assignments** | **Other** |
+|------------|------------|------------|------------|------------|------------|
+| 1 | Jan 4, 2026 | Intro to ML; Model Accuracy; Regression |  |  |  |
+| 2 | Jan 11, 2026 | LDA; QDA; KNN; Logistic Regression |  | A#1 out |  |
+| 3 | Jan 18, 2026 | Resampling; Cross-Validation; Bootstrap; Model Selection |  |  |  |
+| 4 | Jan 25, 2026 | Regularization |  | A#1 due / A#2 out |  |
+| 5 | Feb 1, 2026 | Polynomial Regression; Splines; Non-linear Methods |  |  |  |
+| 6 | Feb 8, 2026 | Trees; Bagging; Random Forest; Boosting |  | A#2 due / A#3 out |  |
+| 7 | Feb 15, 2026 | Reading Week |  |  |  |
+| 8 | Feb 22, 2026 | Support Vector Machines |  |  | Midterm (Feb 25) |
+| 9 | Mar 1, 2026 | Neural Networks; Deep Learning |  | A#3 due / A#4 out |  |
+| 10 | Mar 8, 2026 | Deep Learning (continued) |  |  |  |
+| 11 | Mar 15, 2026 | Main Memory |  | A#4 due / Project out |  |
+| 12 | Mar 22, 2026 | Unsupervised Learning; Clustering; K-means; Model-based Clustering |  |  |  |
+| 13 | Mar 29, 2026 | File Systems Implementation |  | Project due |  |
+| 14 | Apr 5, 2026 | Reinforcement Learning; Projection Pursuit; Model Averaging; Review |  | A#7 |  |
+
+### Missed Assignments
+
+An assignment not handed in receives a mark of **Zero** unless there is a documented reason. If a documented reason is supplied, the weight of the missing assignment is shifted to the final exam. A copy/original of the documented reason must be given to and approved by the instructor.
+
+### Midterm Exam
+
+(Tentative) Wednesday, February 25, 2026. Time: 02:30 PM - 03:50 PM. . The Instructions would be posted on the Myls Page before the exam date.
+
+### Missed Midterm
+
+A missed midterm exam will receive a mark of **Zero** unless there is a valid documented reason. Weight shifting is only given to students with verifiable extenuating circumstances. An extenuating circumstance is a rare and severe event for which a student has no control or cannot anticipate (for example, a serious accident or emergent medical condition).
+
+### Getting Help
+
+-   MyLearningSpace: You should frequently visit your instructor's CP322 webpage on Myls. It contains information pertinent to the course.
+
+-   Use discussion forum on Myls: You are encouraged to post your questions on the discussion forum at Myls. For each chapter and assignment, you would see a thread where you can post the questions. Make sure to review earlier posts to check if your question had not been answered.
+
+-   If the issue/question is not appropriately addressed, you should consult your instructor without delay through email or during office hours are given on page 1. Please do not email me via Myls and, do not make any submissions through email as it gets automatically flagged as spam.
+
+### University and Course Policies
+
+-   **Academic Calendars**: Students are encouraged to review the [Academic Calendar](https://academic-calendar.wlu.ca/) for information regarding all important dates, deadlines, and services available on campus.
+
+-   The Final Examination will be scheduled by the Examinations Office of the University. You will be provided with the date, time and location as soon as this information becomes available.
+
+-   **Accessibility**: Contact [Accessible Learning](https://students.wlu.ca/academics/support-and-advising/accessible-learning/) if you require academic accommodations because of a disability. Review the [Registration](https://students.wlu.ca/academics/support-and-advising/accessible-learning/registration/) page for information about intake and documentation requirements. Deadlines: Students are responsible for meeting posted deadlines for registering with Accessible Learning and booking accommodated exams. Accessible Learning cannot guarantee accommodations for requests received after posted deadlines.
+
+-   **Plagiarism**: Wilfrid Laurier University uses software that can check for plagiarism. If requested to do so by course instructors, students are required to submit their written work in electronic form and have it checked for plagiarism.
+
+-   **Academic Integrity**: Laurier is committed to a culture of integrity within and beyond the classroom. This culture values trustworthiness (i.e., honesty, integrity, reliability), fairness, caring, respect, responsibility and citizenship. Together, we have a shared responsibility to uphold this culture in our academic and nonacademic behaviour. The University has a defined policy with respect to academic misconduct. As a Laurier student you are responsible for familiarizing yourself with this policy and the accompanying penalty guidelines, some of which may appear on your transcript if there is a finding of misconduct. The relevant policy can be found at Laurier's [academic integrity](https://students.wlu.ca/academics/academic-integrity/) website along with resources to educate and support you in upholding a culture of integrity. Ignorance is not a defense.
+
+-   **Late Assignment Policy**: Late or incorrectly submitted labs and assignments are not accepted. Only work submitted correctly and on time is graded. Labs and assignments are submitted through MyLearningSpace dropboxes and may be submitted multiple times. Only the last submission is graded. *Submit early, submit often.* There are no options for make-up work in place of missing labs and assignments.
+
+-   **Final Examinations:** Students are strongly urged not to make any commitments (e.g., vacation) during the examination period. Students are required to be available for examinations during the examination periods of all terms in which they register. Refer to the [Handbook on Undergraduate Course Management](https://lauriercloud.sharepoint.com/sites/teaching-and-learning/How-To/Pages/undergraduate-course-management-handbook.aspx) for more information.
+
+-   **Religious and Spiritual Accommodation**: The University welcomes students, staff and faculty from a wide range of backgrounds, beliefs and traditions and has a duty to provide accommodation based on creed (religion and spirituality) under the Ontario Human Rights Code. This obligation requires the University to work with students to provide reasonable accommodation when a student's religious observances or spiritual beliefs creates a conflict with their academic schedule. In order for instructors to provide proper accommodations, students have obligations to request accommodations in a timely manner. All policies, procedures, timelines, and request forms are found on Laurier’s [Religious and Spiritual Accommodations and Supports](https://lauriercloud.sharepoint.com/sites/diversity-and-equity/Pages/religious-accommodations-and-supports.aspx) webpage.
+
+-   **Gender Inclusivity**: This course will be conducted in an affirming and mutually respectful atmosphere for people of all gender expressions and identities. I was provided with a class roster with your name as it appears on the official enrollment information. If you use a name different from the roster, please let me know at your earliest convenience. You can also share your gender pronouns with me if you like. Members of the class are expected to refer to one another by the name and pronouns identified by each student. If you are comfortable, you can also let your classmates know about your name and pronouns. The Centre for Student Diversity, Equity and Inclusion (CSEDI) has developed a website [outlining how to request a different name to appear on some university records and systems](https://students.wlu.ca/student-life/diversity-and-equity/gender-and-sexuality/index.html?ref=student-life%2Fdiversity-and-equity%2Fgender-inclusivity.html) such as Zoom, MyLS and email. The website also provides information about Laurier’s Inclusive Washroom Initiative, support resources at Laurier, and more.
+
+-   **Syllabus Statement - Intellectual Property**: The educational materials developed for this course, including, but not limited to, lecture notes and slides, handout materials, examinations and assignments, and any materials posted to MyLearningSpace, are the intellectual property of the course instructors. These materials have been developed for student use only and they are not intended for wider dissemination and/or communication outside of a given course. Posting or providing unauthorized audio, video, or textual material of course content to third-party websites violates instructors’ intellectual property rights, and the Canadian Copyright Act. Recording lectures in any way is prohibited in this course unless specific permission has been granted by instructors. Failure to follow these instructions may be in contravention of the university’s Student Non-Academic Code of Conduct and/or Code of Academic Conduct, and will result in appropriate penalties. Participation in this course constitutes an agreement by all parties to abide by the relevant University Policies, and to respect the intellectual property of others during and after their association with Wilfrid Laurier University.
+
+-   **Foot Patrol, the Wellness Centre, and the Student Food Bank:**
+
+    **Multi-campus Resource:**
+
+    -   Good2Talk is a postsecondary school helpline that provides free, professional and confidential counselling support for students in Ontario. Call 1-866-925-5454 or through 2-1-1. Available 24-7.
+
+    **Kitchener/Waterloo Resources:**
+
+    -   [Waterloo Student Food Bank](https://www.yourstudentsunion.ca/food-bank): All students are eligible to use this service to ensure they’re eating healthy when overwhelmed, stressed or financially strained. Anonymously request a package online 24-7. All dietary restrictions accommodated.
+    -   [Waterloo Foot Patrol](https://students.wlu.ca/wellness-and-recreation/safety/foot-patrol.html): 519.886.FOOT (3668). A volunteer operated safe-walk program, available Fall and Winter daily from 6:30 pm to 3 am. Teams of two are assigned to escort students to and from campus by foot or by van.
+    -   [Waterloo Student Wellness Centre](https://students.wlu.ca/wellness-and-recreation/health-and-wellness/index.html): 519-884-0710, x3146. The Centre supports the physical, emotional, and mental health needs of students. Located on the 2nd floor of the Student Services Building, booked and same-day appointments are available Mondays and Wednesdays from 8:30 am to 7:30 pm, and Tuesdays, Thursdays and Fridays from 8:30 am to 4:15 pm. Contact the Centre at x3146, wellness\@wlu.ca or @LaurierWellness. After hours crisis support available 24/7. Call 1-844-437-3247 (HERE247).
+
+    **Brantford Resources:**
+
+    -   [Brantford Student Food Bank](https://www.yourstudentsunion.ca/food-bank): All students are eligible to use this service to ensure they’re eating healthy when overwhelmed, stressed or financially strained. Anonymously request a package online 24-7. All dietary restrictions accommodated.
+    -   [Brantford Foot Patrol](https://students.wlu.ca/wellness-and-recreation/safety/foot-patrol.html): 519-751-PTRL (7875). A volunteer operated safe-walk program, available Fall and Winter, Monday through Thursday from 6:30 pm to 1 am; Friday through Sunday 6:30 pm to 11 pm. Teams of two are assigned to escort students to and from campus by foot or by van.
+    -   [Brantford Wellness Centre](https://students.wlu.ca/wellness-and-recreation/health-and-wellness/index.html): 519-756-8228, x5803. Students have access to support for all their physical, emotional, and mental health needs at the Wellness Centre. Location: Student Centre, 2nd floor. Hours: 8:30 am to 4:15 pm Monday through Friday. After hours crisis support available 24/7. Call 1-884-437-3247 (HERE247).
+
+    I acknowledge that in Kitchener, Waterloo, Cambridge, and Brantford we are on the traditional territory of the Neutral, Anishnawbe, and Haudenosaunee peoples.

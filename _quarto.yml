@@ -26,8 +26,8 @@ website:
     contents:
       - href: 2026/index.qmd
         text: "🏠 Home"
-      # - href: 2023/syllabus.qmd
-      #   text: "📓 Syllabus"
+      - href: 2026/syllabus.qmd
+        text: "📓 Syllabus"
       # - href: 2023/communication.qmd
       #   text: "📟 Communication"
       # - href: 2023/assignments.qmd

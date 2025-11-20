@@ -56,6 +56,35 @@
     return normalizedPath.startsWith(normalizedRoot);
   }
 
+  function isSameSiteHref(href) {
+    if (!href) {
+      return false;
+    }
+
+    if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) {
+      return false;
+    }
+
+    try {
+      const url = new URL(href, window.location.origin);
+      return url.origin === window.location.origin;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function ensureInternalLinksStayInTab() {
+    const anchors = window.document.querySelectorAll('a[target]');
+    anchors.forEach((anchor) => {
+      const href = anchor.getAttribute('href');
+      if (isSameSiteHref(href)) {
+        anchor.removeAttribute('target');
+      }
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', ensureInternalLinksStayInTab);
+
   const path = normalizePath(window.location.pathname);
   const isLoginPage = path === '/login' || path === '/login/' || path.startsWith('/login/');
 

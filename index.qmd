@@ -1,5 +1,5 @@
 ---
-title: "MY COURSE CODE - MY COURSE NAME"
+title: Courses Taught by Dr Sukhjit Singh Sehra"
 format:
   html:
     include-before-body: helpers/remove-nav.html

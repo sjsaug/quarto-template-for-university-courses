@@ -1,5 +1,5 @@
 ---
-title: "MY_COURSE_CODE - MY_COURSE_NAME"
+title: "CP322: Machine Learning"
 subtitle: "Academic Year: 2022/23"
 format: html
 ---

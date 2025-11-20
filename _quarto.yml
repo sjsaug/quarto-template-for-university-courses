@@ -6,10 +6,8 @@ project:
     - login
   render:
     - "index.qmd"
-    - "2023/*.qmd"
-    - "2023/weeks/week01/*.qmd"
-    - "CP322/*.qmd"
-    - "CP322/weeks/week01/*.qmd"
+    - "2026/*.qmd"
+    - "2026/weeks/week01/*.qmd"
 
 website:
   title: "MY_COURSE_NAME 2025/26"
@@ -26,7 +24,7 @@ website:
   sidebar:
     style: docked
     contents:
-      - href: CP322/index.qmd
+      - href: 2026/index.qmd
         text: "🏠 Home"
       # - href: 2023/syllabus.qmd
       #   text: "📓 Syllabus"
@@ -43,10 +41,10 @@ website:
       #       text: "👥 Group Project"
       - section: "🗓️ Weeks"
         contents:
-         - href: CP322/weeks/week01/page.qmd
+         - href: 2026/weeks/week01/page.qmd
            text: Week 01
            contents:
-             - href: CP322/W26/weeks/week01/page.qmd
+             - href: 2026/W26/weeks/week01/page.qmd
                text: 👨‍🏫 Lecture Material
             #  - href: 2023/weeks/week01/lab.qmd
             #    text: 💻 Lab Roadmap

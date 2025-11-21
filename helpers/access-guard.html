@@ -3,6 +3,21 @@
   const LOGIN_PATH = '/login/';
   const ACCESS_KEY = 'courseAccess';
   const SESSION_LIFETIME_MS = 12 * 60 * 60 * 1000; // 12 hours
+  const LOCAL_DEV_LOGIN_BYPASS = true; // set to false to test the login gate locally
+
+  function isLocalDevHost() {
+    const hostname = window.location.hostname || '';
+    return (
+      hostname === 'localhost' ||
+      hostname === '127.0.0.1' ||
+      hostname === '[::1]' ||
+      hostname.endsWith('.local')
+    );
+  }
+
+  function shouldBypassLogin() {
+    return Boolean(LOCAL_DEV_LOGIN_BYPASS) && isLocalDevHost();
+  }
 
   function normalizePath(value) {
     if (!value || typeof value !== 'string') {
@@ -87,8 +102,9 @@
 
   const path = normalizePath(window.location.pathname);
   const isLoginPage = path === '/login' || path === '/login/' || path.startsWith('/login/');
+  const isLocalBypass = shouldBypassLogin();
 
-  if (isLoginPage) {
+  if (isLoginPage || isLocalBypass) {
     return;
   }
 

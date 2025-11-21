@@ -2,7 +2,7 @@
 
 You can work with Jupyter notebooks in two main ways. The first uses Google Colab, which runs everything in the browser. The second uses VS Code on your own computer with a proper Python environment. Both options let you run NumPy, Pandas, Matplotlib, scikit learn and any other library you need for the course.
 
-## 1. Using Google Colab
+## 1. Google Colab
 
 Google Colab is the easiest way to get started because everything runs online. You do not need to install anything on your computer.
 
@@ -46,7 +46,7 @@ This approach is great when you want fast setup or you are working on a Chromebo
 
 ---
 
-## 2. Working Locally in VS Code
+## 2. Local
 
 This option gives you more control and is closer to how real projects are developed. You will install Miniconda, create a Python environment, and run notebooks in VS Code.
 
@@ -56,6 +56,8 @@ Download and install Visual Studio Code from
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 Accept the default settings during installation.
+
+I have crafted a tutorial for installing vscode and setting up Python, to read click [here](https://sukhjitsehra.github.io/vscode/)
 
 ### Step 2: Install Miniconda
 
@@ -140,6 +142,11 @@ pip install seaborn
 Refresh the kernel in VS Code afterward.
 
 ---
+
+## 2. Syzygy
+
+
+
 
 ## Which option should you choose
 

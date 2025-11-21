@@ -2,7 +2,7 @@
 
 The Jupyter Notebook is an interactive computing environment that enables users to author notebook documents. It allows you to create and share documents that contain live code, equations, visualizations, and narrative text. It is used for data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and more.  Notebook documents provide a complete, self-contained record of a computation that can be converted to various formats and shared (email, Dropbox, GitHub, etc.).
 
-You can work with Jupyter notebooks in three main ways. The first uses [Google Colab](https://colab.research.google.com), which runs everything in the browser. The second uses [Syzygy](https://wlu.syzygy.ca/) platform, that presents a pure Jupyter Notebook Environment. The last one is VS Code on your own computer with a proper Python environment. Both options let you run NumPy, Pandas, Matplotlib, scikit learn and any other library you need for the course.
+You can work with Jupyter notebooks in three main ways. The first uses [Google Colab](https://colab.research.google.com), which runs everything in the browser. The second uses [Syzygy](https://wlu.syzygy.ca/) platform, that presents a pure Jupyter Notebook Environment. The last one is VS Code on your own computer with a proper Python environment. All options let you run NumPy, Pandas, Matplotlib, scikit learn and any other library you need for the course.
 
 
 ::: {.callout-important collapse=false}
@@ -177,7 +177,7 @@ Types of cells:
 
 Rich output (images, video, plots) is embedded directly.
 
-## **Code Cells**
+### **Code Cells**
 
 Ways to execute:
 
@@ -194,7 +194,7 @@ The **Cell** menu includes:
 * Run All Above
 * Run All Below
 
-### **Adding and Moving Cells**
+#### **Adding and Moving Cells**
 
 * Add new cells using the **+** buttons between cells or via the toolbar.
 * Move cells with "Cell Up" or "Cell Down" in the toolbar.
@@ -202,7 +202,7 @@ The **Cell** menu includes:
 * Select non-adjacent cells: `Ctrl + Click`.
 * Select ranges: `Shift + Click`.
 
-### **Shortcuts**
+#### **Shortcuts**
 
 * **Edit mode / Command mode**: `Enter` / `Esc`
 * **Command mode actions**:
@@ -219,16 +219,16 @@ The **Cell** menu includes:
 
   * `Ctrl + Shift + -` — split cell
 
-### **Text / Markdown Cells**
+#### **Text / Markdown Cells**
 
 * Double-click to edit.
 * Supports Markdown syntax.
 * Supports LaTeX using `$...$` (inline) or `$$...$$` (display).
 * Markdown spec: [https://daringfireball.net/projects/markdown/](https://daringfireball.net/projects/markdown/)
 
-### **Markdown Basics**
+#### **Markdown Basics**
 
-#### **Headings**
+##### **Headings**
 
 Use `#` symbols:
 
@@ -237,14 +237,14 @@ Use `#` symbols:
 ##### Heading 5
 ```
 
-#### **Emphasis**
+##### **Emphasis**
 
 * **Bold** — `**text**`
 * *Italic* — `*text*` or `_text_`
 * ~~Strikethrough~~ — `~~text~~`
 * `Monospace` — backticks
 
-#### **Math**
+##### **Math**
 
 Inline:
 
@@ -252,18 +252,18 @@ Inline:
 $y = 0.1x$
 ```
 
-#### **Indenting**
+##### **Indenting**
 
 Use `>` for block quotes.
 
-#### **Bullets**
+##### **Bullets**
 
 * `-` space
 * `*` space
 
 Sub-bullets: indent with Tab.
 
-#### **Numbered Lists**
+##### **Numbered Lists**
 
 ```
 1. Item
@@ -272,7 +272,7 @@ Sub-bullets: indent with Tab.
 
 Substep: indent with Tab.
 
-#### **Links**
+##### **Links**
 
 ```
 [link text](https://url.com)
@@ -280,13 +280,13 @@ Substep: indent with Tab.
 
 Plain URLs auto-link.
 
-### **Creating a New Notebook**
+#### **Creating a New Notebook**
 
 * Click **New** in the Jupyter browser.
 * Choose Python or R kernel.
 * Rename the notebook by clicking the title.
 
-### **Uploading a Notebook or Data File**
+#### **Uploading a Notebook or Data File**
 
 * Click **Upload** in the Jupyter file browser.
 * Upload `.ipynb` or `.csv` files.

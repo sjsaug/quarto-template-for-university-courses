@@ -1,13 +1,12 @@
 # Working with Python Jupyter Notebooks
 
-## **Jupyter Notebook**
-
 The Jupyter Notebook is an interactive computing environment that enables users to author notebook documents. It allows you to create and share documents that contain live code, equations, visualizations, and narrative text. It is used for data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and more.  Notebook documents provide a complete, self-contained record of a computation that can be converted to various formats and shared (email, Dropbox, GitHub, etc.).
-
-::: {.callout-important collapse=false}
 
 You can work with Jupyter notebooks in three main ways. The first uses [Google Colab](https://colab.research.google.com), which runs everything in the browser. The second uses [Syzygy](https://wlu.syzygy.ca/) platform, that presents a pure Jupyter Notebook Environment. The last one is VS Code on your own computer with a proper Python environment. Both options let you run NumPy, Pandas, Matplotlib, scikit learn and any other library you need for the course.
 
+
+::: {.callout-important collapse=false}
+The following Syzygy section introduces basics of markdown.
 :::
 
 ::: {.panel-tabset}
@@ -26,16 +25,15 @@ Sign in using your Google account.
 
 You can start in three ways.
 
-• Click File, then New notebook to create a blank notebook
-• Upload a notebook from your computer using File, then Upload notebook
-• Open a notebook directly from GitHub by selecting File, then Open notebook, then the GitHub tab
+* Click File, then New notebook to create a blank notebook
+* Upload a notebook from your computer using File, then Upload notebook
+* Open a notebook directly from GitHub by selecting File, then Open notebook, then the GitHub tab
 
 If your course repository has notebooks, paste the GitHub link in the search bar and Colab will load them.
 
 ### Step 3: Run a cell
 
-Click a code cell and press Shift plus Enter to run it.
-Colab gives you a full Python runtime with popular libraries already installed.
+Click a code cell and press Shift plus Enter to run it. Colab gives you a full Python runtime with popular libraries already installed.
 
 ### Step 4: Install extra packages
 
@@ -49,12 +47,7 @@ Example:
 
 ### Step 5: Save your work
 
-You can save the notebook to your Google Drive using File, then Save a copy in Drive.
-You can also download it to your computer as an .ipynb file.
-
-This approach is great when you want fast setup or you are working on a Chromebook or a system without Python installed.
-
-
+You can save the notebook to your Google Drive using File, then Save a copy in Drive. You can also download it to your computer as an .ipynb file. This approach is great when you want fast setup or you are working on a Chromebook or a system without Python installed.
 
 ## Local
 
@@ -78,9 +71,9 @@ Download the installer for your system from
 
 Run the installer and choose the following:
 
-• Install for your user only
-• Add Miniconda to your PATH or let the installer manage it automatically
-• Accept default directory
+* Install for your user only
+* Add Miniconda to your PATH or let the installer manage it automatically
+* Accept default directory
 
 Restart your computer after installation to ensure all paths work correctly.
 
@@ -114,15 +107,13 @@ This installs the tools you need for most notebooks.
 
 ### Step 5: Install the VS Code Python extension
 
-Open VS Code.
-Go to the Extensions tab on the left.
-Search for Python. Install the official extension by Microsoft.
+* Open VS Code.
+* Go to the Extensions tab on the left.
+* Search for Python. Install the official extension by Microsoft.
 
 ### Step 6: Install the Jupyter extension
 
-In the same Extensions tab search for Jupyter.
-Install the official Jupyter extension.
-This extension lets you open and run .ipynb notebooks inside VS Code.
+In the same Extensions tab search for Jupyter and install the official Jupyter extension. This extension lets you open and run .ipynb notebooks inside VS Code.
 
 ### Step 7: Open your notebook
 
@@ -174,14 +165,14 @@ Refresh the kernel in VS Code afterward.
 * Create a folder named `CP322` on your computer for all worksheets.
 * Upload `.ipynb` files to JupyterHub and open them.
 
-## **Notebook Dashboard**
+### **Notebook Dashboard**
 
 Contains three tabs:
 
 * **Files** — shows files and folders under the current directory.
 * **Launcher** — shows different options available to work in Syzygy.
 
-## **Notebook User Interface**
+### **Notebook User Interface**
 
 It includes:
 
@@ -189,7 +180,7 @@ It includes:
 * Toolbar
 * Notebook area with cells
 
-## **Notebook Area and Cells**
+### **Notebook Area and Cells**
 
 Notebooks contain a sequence of cells.
 
@@ -222,7 +213,7 @@ The **Cell** menu includes:
 * Run All Above
 * Run All Below
 
-## **Adding and Moving Cells**
+### **Adding and Moving Cells**
 
 * Add new cells using the **+** buttons between cells or via the toolbar.
 * Move cells with "Cell Up" or "Cell Down" in the toolbar.
@@ -230,7 +221,7 @@ The **Cell** menu includes:
 * Select non-adjacent cells: `Ctrl + Click`.
 * Select ranges: `Shift + Click`.
 
-## **Shortcuts**
+### **Shortcuts**
 
 * **Edit mode / Command mode**: `Enter` / `Esc`
 * **Command mode actions**:
@@ -247,16 +238,16 @@ The **Cell** menu includes:
 
   * `Ctrl + Shift + -` — split cell
 
-## **Text / Markdown Cells**
+### **Text / Markdown Cells**
 
 * Double-click to edit.
 * Supports Markdown syntax.
 * Supports LaTeX using `$...$` (inline) or `$$...$$` (display).
 * Markdown spec: [https://daringfireball.net/projects/markdown/](https://daringfireball.net/projects/markdown/)
 
-## **Markdown Basics**
+### **Markdown Basics**
 
-### **Headings**
+#### **Headings**
 
 Use `#` symbols:
 
@@ -265,14 +256,14 @@ Use `#` symbols:
 ##### Heading 5
 ```
 
-### **Emphasis**
+#### **Emphasis**
 
 * **Bold** — `**text**`
 * *Italic* — `*text*` or `_text_`
 * ~~Strikethrough~~ — `~~text~~`
 * `Monospace` — backticks
 
-### **Math**
+#### **Math**
 
 Inline:
 
@@ -280,18 +271,18 @@ Inline:
 $y = 0.1x$
 ```
 
-### **Indenting**
+#### **Indenting**
 
 Use `>` for block quotes.
 
-### **Bullets**
+#### **Bullets**
 
 * `-` space
 * `*` space
 
 Sub-bullets: indent with Tab.
 
-### **Numbered Lists**
+#### **Numbered Lists**
 
 ```
 1. Item
@@ -300,7 +291,7 @@ Sub-bullets: indent with Tab.
 
 Substep: indent with Tab.
 
-### **Links**
+#### **Links**
 
 ```
 [link text](https://url.com)
@@ -308,27 +299,17 @@ Substep: indent with Tab.
 
 Plain URLs auto-link.
 
-## **Creating a New Notebook**
+### **Creating a New Notebook**
 
 * Click **New** in the Jupyter browser.
 * Choose Python or R kernel.
 * Rename the notebook by clicking the title.
 
-## **Uploading a Notebook or Data File**
+### **Uploading a Notebook or Data File**
 
 * Click **Upload** in the Jupyter file browser.
 * Upload `.ipynb` or `.csv` files.
 * Double-click to open.
-
----
-
-If you want, I can also produce:
-
-* A **PDF-ready** Quarto version
-* A **student handout** version
-* A **slide deck (reveal.js)** version
-
-Just tell me what format you need.
 
 :::
 

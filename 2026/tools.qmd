@@ -6,7 +6,7 @@ The Jupyter Notebook is an interactive computing environment that enables users 
 
 ::: {.callout-important collapse=false}
 
-You can work with Jupyter notebooks in three main ways. The first uses Google Colab, which runs everything in the browser. The second uses Syzygy platform, that presents a pure Jupyter Notebook Environment. The last one is VS Code on your own computer with a proper Python environment. Both options let you run NumPy, Pandas, Matplotlib, scikit learn and any other library you need for the course.
+You can work with Jupyter notebooks in three main ways. The first uses [Google Colab](https://colab.research.google.com), which runs everything in the browser. The second uses [Syzygy](https://wlu.syzygy.ca/) platform, that presents a pure Jupyter Notebook Environment. The last one is VS Code on your own computer with a proper Python environment. Both options let you run NumPy, Pandas, Matplotlib, scikit learn and any other library you need for the course.
 
 :::
 

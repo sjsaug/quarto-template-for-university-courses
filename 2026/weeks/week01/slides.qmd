@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning"
-subtitle: "Programs that improve at a task through experience, measured by performance"
+subtitle: "<font style='font-size:1em;'>Programs that improve at a task through experience, measured by performance </font>"
 author: Dr. Sukhjit Singh Sehra
 institute: "<font style='font-size:2em;'> Department of Computer Science and Physics, </br> Wilfrid Laurier University, Waterloo </font>"
 # date: 14 January 2026
@@ -181,7 +181,7 @@ _—Arthur Samuel\, 1959_
 
 - Integrating the model into the system
 
-## Big picture and understanding the project
+## Big picture
 
 - Define the goal in terms of business
 
@@ -225,7 +225,7 @@ It is the work that allows us to quickly recognize the data\, given to creating 
   * Min\-max Scaling
   * Standardization
 
-## Model selection and training of the model
+## Model selection and Training
 
 ![](img/Day%201%20-%20Machine%20Learning%20%281%2922.png)
 
@@ -264,7 +264,7 @@ Confusion Matrix
 
 - Once you are sure of your final model\, measure its performance on the test set to estimate its generalization error\.
 
-## Integrating the model into the system (Deployment)
+## Integrating the model into the system
 
 - ML Deployment is the integration of a data\-driven machine learning model into an existing production environment\.
 
@@ -276,7 +276,7 @@ Confusion Matrix
 
 - __Heroku __ is a cloud computing application infrastructure service provider \(PaaS\)
 
-## Machine Learning Terminologies: Cross Validation
+##  Cross Validation
 
 Cross validation\, also called CV\, is a method used to select a model that does not rely heavily on the initial training set\.
 

@@ -13,14 +13,21 @@ Use your keypad to navigate the slides.
 <iframe src="slides.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
 </div>
 
-🎥 Looking for lecture recordings? You can only find those on Moodle.
+## 📚 Jupyter Notebooks
 
-## ✍️ Coursework
+All Jupyter notebooks for this course are available in the course GitHub repository. Each week is maintained in its own branch (week01, week02, ...); switch to the branch for the week you want to view.
 
-🚧 Come back after the lecture to read the coursework instructions for the week 🚧
+Visit: https://github.com/sukhjitsehra/CP322
 
+To open this week's notebooks, choose one of the following:
 
-## 📚 Recommended Reading
+- Clone and run locally
+
+- Open in Google Colab
+
+- Use WLU Syzygy (wlu.syzygy.ca)
+   
+## ✍️  Recommended Reading
 
 - Check the end of slides for the list of references cited in the lecture.
 

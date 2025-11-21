@@ -196,6 +196,7 @@ This template now includes a credential gate that appears before any course page
 
 1. `npm install`
 2. Run `npx netlify dev` to exercise the function and login flow locally. The Quarto files will still render via `quarto preview`; alternatively, run `npm run build` when you just need the static output.
+3. When you run `netlify dev`, the login gate is bypassed automatically on `localhost` while the constant `LOCAL_DEV_LOGIN_BYPASS` in `helpers/access-guard.html` remains `true`. Flip it to `false` whenever you want to test the lock locally—the hosted Netlify build always enforces the login page regardless of this flag.
 
 ### Customising the login experience
 

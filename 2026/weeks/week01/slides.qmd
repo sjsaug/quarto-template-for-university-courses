@@ -1,8 +1,17 @@
 ---
 title: "Machine Learning"
-subtitle: "<font style='font-size:1em;'>Programs that improve at a task through experience, measured by performance </font>"
-author: Dr. Sukhjit Singh Sehra
-institute: "<font style='font-size:2em;'> Department of Computer Science and Physics, </br> Wilfrid Laurier University, Waterloo </font>"
+subtitle: "<font style='font-size:0.6em;'>Programs that improve at a task through experience, measured by performance </font>"
+author: </br></br> Dr. Sukhjit Singh Sehra </br> <a href="https://www.linkedin.com/in/sukhjitsehra" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" 
+         alt="LinkedIn" width="18" style="vertical-align:middle;">
+  </a>
+  &nbsp;
+  <a href="https://github.com/sukhjitsehra" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" 
+         alt="GitHub" width="18" style="vertical-align:middle;">
+  </a>
+
+institute:  <font style='font-size:2em;'>Department of Computer Science and Physics </br> Wilfrid Laurier University, Waterloo </font>
 # date: 14 January 2026
 # date-meta: 14 March 2023
 date-format: "DD MMM YYYY"
@@ -19,7 +28,7 @@ format:
     css: [../../../css/syntax-highlight.css, ../../../css/custom.css, /css/pacman.css, ../../../css/styles_slides.css]
     chalkboard: 
       buttons: TRUE
-    # fig-responsive: true
+    fig-responsive: true
     smaller: true
     theme: [../../../css/monash.scss]
     mouse-wheel: false
@@ -103,16 +112,18 @@ execute:
 
 ## What is Machine Learning?
 
- is the science \(and art\) of programming computers so that they can learn from data\.
+It is the science \(and art\) of programming computers so that they can learn from data.  
 
 ![](img/Day%201%20-%20Machine%20Learning%20%281%293.png){fig-align="center" height=60%}
 
-_Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed\._
-
-_—Arthur Samuel\, 1959_
+_Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed (Arthur Samuel\, 1959)_
 
 ## Machine Learning Disambiguation 
-![](img/Day%201%20-%20Machine%20Learning%20%281%294.png){fig-align="center" width=50%}
+:::{.figure .center}
+<div style="text-align:center;">
+  <img src="img/aidlllm.png" style="width:70%;">
+</div>
+:::
 <!-- {fig-align="center"} -->
 
 ## Types of Machine Learning {background-color="black"}
@@ -284,11 +295,11 @@ Cross validation\, also called CV\, is a method used to select a model that does
 
 ## Bias - Variance Tradeoff
 
-__Bias: __ The bias of a model is the difference between the expected prediction and the correct model we are trying to predict for the given data points\.
+- __Bias: __ The bias of a model is the difference between the expected prediction and the correct model we are trying to predict for the given data points\.
 
-__Variance: __ The variance of a model is the variability of the model estimate for given data points\.
+- __Variance: __ The variance of a model is the variability of the model estimate for given data points\.
 
-__Deviation/variance Tradeoff: __ The simpler the model\, the higher the bias\, and the more complex the model\, the higher the variance\.
+- __Deviation/variance Tradeoff: __ The simpler the model\, the higher the bias\, and the more complex the model\, the higher the variance\.
 
 |  | Underfitting | Ideal | Overfitting |
 | :-: | :-: | :-: | :-: |
@@ -297,24 +308,71 @@ __Deviation/variance Tradeoff: __ The simpler the model\, the higher the bias\, 
 
 ## Tools Used in Machine Learning
 
-__Python __ is a general purpose programming language.
-__NumPy __ is the basic package used for scientific calculations in Python\.
-__Pandas__  is an open source Python library that facilitates data analysis and data preprocessing\.
+- __Python __ is a general purpose programming language.
+- __NumPy __ is the basic package used for scientific calculations in Python\.
+- __Pandas__  is an open source Python library that facilitates data analysis and data preprocessing\.
 
+- __Matplotlib __ is a data visualization and plotting library for the Python programming language The matplotlib plotting package is one of the most important tools for scientific programming with Python
 
-__Matplotlib __ is a data visualization and plotting library for the Python programming language
-
-The matplotlib plotting package is one of the most important tools for scientific programming with Python
-
-__Scikit\-learn __ is a free software machine learning library for the Python programming language\.
-
-It includes many basic methods such as linear regression\, logistic regression\, decision trees\, random forest\.
+- __Scikit\-learn __ is a free software machine learning library for the Python programming language\. It includes many basic methods such as linear regression\, logistic regression\, decision trees\, random forest\.
 
 ## Datasets
 
-__Kaggle__  is an online community for data scientists and machine learning practitioners\.
+- __Kaggle__  is an online community for data scientists and machine learning practitioners\.
 
-__UCI __ is the dataset repository provided by the machine learning and intelligent systems research center at the __ University of California\, Irvine\.
+- __UCI __ is the dataset repository provided by the machine learning and intelligent systems research center at the _University of California, Irvine_.
 
-__Google Datasets__ Discover and access unique and valuable datasets.
+- __Google Datasets__ Discover and access unique and valuable datasets.
 
+
+## {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {data-id="thanks-wrap" style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%;"}
+
+<div data-id="thanks-text"
+     style="font-size:64px; font-weight:700; text-align:center; margin-bottom:30px;">
+  THANKS
+</div>
+
+::: {.r-hstack data-id="boxes" style="justify-content:center; align-items:center;"}
+::: {data-id="box1" auto-animate-delay="0"
+     style="background:#2780e3; width:200px; height:150px; margin:10px;"}
+:::
+::: {data-id="box2" auto-animate-delay="0.1"
+     style="background:#3fb618; width:200px; height:150px; margin:10px;"}
+:::
+::: {data-id="box3" auto-animate-delay="0.2"
+     style="background:#e83e8c; width:200px; height:150px; margin:10px;"}
+:::
+:::
+
+:::
+---
+
+## {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: {data-id="thanks-wrap" style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%;"}
+
+<div data-id="thanks-text"
+     style="font-size:64px; font-weight:700; text-align:center; margin-bottom:30px;">
+  THANKS
+</div>
+
+::: {.r-stack data-id="boxes" style="margin-top:10px;"}
+::: {data-id="box1"
+     style="background:#2780e3; width:350px; height:350px; border-radius:200px;"}
+:::
+::: {data-id="box2"
+     style="background:#3fb618; width:250px; height:250px; border-radius:200px;"}
+:::
+::: {data-id="box3"
+     style="background:#e83e8c; width:150px; height:150px; border-radius:200px;"}
+:::
+:::
+
+:::
+
+ 
+## References
+
+- Images referred in the text are adapted from online sources.

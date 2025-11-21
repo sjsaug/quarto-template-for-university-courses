@@ -13,13 +13,13 @@ With the rise of data science and big data fields, machine learning has gained f
 
 # 📍 Lecture
 
-Section C: 	Mon/Wed from 02:30 PM - 03:50 PM at N1002
+* **Section C: 	Mon/Wed from 02:30 PM - 03:50 PM at Science Building Room - N1002**
 
 
 # 🧑🏻‍🏫 Our Team
 
 ::: {.panel-tabset}
-## Course Convenor
+## Course Instructor
 ![](/figures/people/ssehra.jpg){fig-align="left" fig-alt="Photo of Dr. Sehra" style="object-fit: cover;width:5em;height:5em;border-radius: 50%;"}  
 **[Sukhjit Singh Sehra](https://ssehra.com/)** <br/>
 Assistant Professor<br/>

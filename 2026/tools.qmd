@@ -44,6 +44,7 @@ Example:
 ```
 
 Here, '!' is used to run the system terminal commands
+
 ### Step 5: Save your work
 
 You can save the notebook to your Google Drive using File, then Save a copy in Drive. You can also download it to your computer as an .ipynb file. This approach is great when you want fast setup or you are working on a Chromebook or a system without Python installed.
@@ -128,12 +129,7 @@ Refresh the kernel in VS Code afterward. Rest we will do experimentation in the 
 ## Syzygy
 
 
-* [Syzygy](https://wlu.syzygy.ca/) is a joint project of the Pacific Institute for the Mathematical Sciences (PIMS).
-* It offers a free web-based Jupyter Notebook platform to universities.
-* No setup is required; it runs entirely in Compute Canada’s cloud.
-* You can write and execute code, save and share analyses, and access strong computing resources directly in your browser.
-* Syzygy provides a *pure* Jupyter environment.
-* It offers 8/16 cores and 64/128 GB for each university, partitioned between users via Docker.
+* [Syzygy](https://wlu.syzygy.ca/) is a joint project of the Pacific Institute for the Mathematical Sciences (PIMS). It offers a free web-based Jupyter Notebook platform to universities.  No setup is required; it runs entirely in Compute Canada’s cloud.  You can write and execute code, save and share analyses, and access strong computing resources directly in your browser.  Syzygy provides a *pure* Jupyter environment.  It offers 8/16 cores and 64/128 GB for each university, partitioned between users via Docker.
 
 ::: {.callout-important collapse=false}
 **Warning:** Syzygy gives limited storage to each student. Avoid uploading large files.
@@ -141,10 +137,7 @@ Refresh the kernel in VS Code afterward. Rest we will do experimentation in the 
 
 ### **Launching Jupyter Notebook**
 
-* Access the Syzygy platform using the link provided on MyLS.
-* This environment is integrated into your Laurier account.
-* Create a folder named `CP322` on your computer for all worksheets.
-* Upload `.ipynb` files to JupyterHub and open them.
+* Access the Syzygy platform by clicking [here](https://wlu.syzygy.ca/).  This environment is integrated into your Laurier account.  Create a folder named `CP322` on your computer for all worksheets.  Upload `.ipynb` files to JupyterHub and open them.
 
 ### **Notebook Dashboard**
 
@@ -298,6 +291,6 @@ Plain URLs auto-link.
 
 ## Which option should you choose
 
-Google Colab is fast, convenient, and powerful. If you want to use alternative you can use Syzygy. VS Code gives you full control and is better for larger projects.  All methods work for every notebook in this course. Once you are comfortable with both, you can switch between them depending on what you are working on.
+Google Colab is fast, convenient, and powerful. If you want to use alternative you can use Syzygy. VS Code gives you full control and is better for larger projects.  All methods work for every notebook in this course. Once you are comfortable, you can switch between them depending on what you are working on.
 
 :::

@@ -23,7 +23,7 @@ You can practice this week’s material directly in Google Colab. The following 
 
 These notebooks are all stored in the course GitHub repository and can be opened with a single click in Colab.
 
-If you prefer a different setup, please click [here](slides.qmd) 
+If you prefer a different setup, please click [here](../../tools.qmd) 
 
 Choose whichever environment you’re most comfortable with.
 
